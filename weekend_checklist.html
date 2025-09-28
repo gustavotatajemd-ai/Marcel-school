@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #111827;
+            font-family: 'Inter', sans-serif;
+        }
+        .tool-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-white">
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold tracking-tight">System Hub</h1>
+            <p class="text-lg text-gray-400 mt-2">Select a tool to get started.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+            <!-- Data Tracker Card -->
+            <a href="data_tracker.html" class="tool-card rounded-xl p-8 block">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="bg-blue-500/20 p-3 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M12 20V10M18 20V4M6 20V16"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold">Command Center</h2>
+                </div>
+                <p class="text-gray-400">
+                    Access the interactive dashboard for tracking academic, clinical, and personal metrics. Visualize trends and log new data points.
+                </p>
+            </a>
+
+            <!-- Weekend Checklist Card -->
+            <a href="weekend_checklist.html" class="tool-card rounded-xl p-8 block">
+                 <div class="flex items-center space-x-4 mb-4">
+                    <div class="bg-green-500/20 p-3 rounded-lg">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold">Weekend Checklist</h2>
+                </div>
+                <p class="text-gray-400">
+                    View and complete the collaborative checklist for your weekly review and planning session. Stays in sync for all users.
+                </p>
+            </a>
+        </div>
+
+        <footer class="text-center text-gray-500 mt-16">
+            <p>Last updated: September 28, 2025</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
